@@ -1,13 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "../styles/contact.scss";
 import * as emailjs from 'emailjs-com';
 
 
-function Contact() {
+function Contact(props) {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
     const [comments, setComments] = useState("");
+
+    useEffect(() => {
+        props.setHighlight(2);
+      }, []);
 
     function sendEmail(e) {
         e.preventDefault();

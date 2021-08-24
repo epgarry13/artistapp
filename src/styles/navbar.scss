@@ -1,18 +1,32 @@
 .navbar{
     display: flex;
     justify-content: center;
-    height: 50px;
+    height: 80px;
     align-items: center;
+    // border: 1px solid;
     &_container{
         width: clamp(250px, 30%, 800px);
         display: flex;
         justify-content: space-between;
+        // border: 1px solid;
+
         &>div{
             &>a{
                 text-decoration: none;
-                color: black;
+                text-transform: uppercase;
+                &:hover{
+                    color: #e77320;
+                }
             }
         }
     }
 
+}
+
+.selected{
+    color: #e77320;
+}
+
+.not {
+    color: rgb(161, 161, 161);
 }

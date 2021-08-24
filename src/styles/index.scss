@@ -9,7 +9,12 @@
 
 .page_container{
     width: clamp(300px,60vw, 756px);
-    margin: 60px auto;
+    margin: 30px auto;
+}
+
+h1{
+    text-transform: uppercase;
+    color: #e77320;
 }
 
 @media only screen and (max-width: 1000px) {

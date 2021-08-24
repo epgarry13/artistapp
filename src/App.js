@@ -1,24 +1,27 @@
-import React from 'react';
+import React, { useState } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Navbar from "./components/navbar";
 
-
-import home from "./pages/home";
-import portfolio from "./pages/portfolio";
-import contact from "./pages/contact";
-
+import Home from "./pages/home";
+import Portfolio from "./pages/portfolio";
+import Contact from "./pages/contact";
 
 function App() {
-  return (
-    <BrowserRouter>
-      <Navbar />
-      <Switch>
-        <Route exact path="/" component={home} />
-        <Route exact path="/portfolio" component={portfolio} />
-        <Route exact path="/contact" component={contact} />
-      </Switch>
-    </BrowserRouter>
 
+  const [ highlight, setHighlight] = useState(0);
+
+  return (
+    <>
+
+      <BrowserRouter>
+        <Navbar highlight={highlight} setHighlight={setHighlight}/>
+        <Switch>
+          <Route exact path="/" component={()=> <Home setHighlight={setHighlight}/>}/>
+          <Route exact path="/portfolio" component={()=> <Portfolio setHighlight={setHighlight}/>} />
+          <Route exact path="/contact" component={()=> <Contact setHighlight={setHighlight}/>} />
+        </Switch>
+    </BrowserRouter>
+    </>
   );
 }
 

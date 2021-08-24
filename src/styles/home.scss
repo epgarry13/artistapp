@@ -1,6 +1,6 @@
 .name{
     text-align: center;
-    margin-top: 2rem;
+    // border: 1px solid;
 }
 
 .home_image_rotate{
@@ -11,6 +11,18 @@
 .home_carousel{
     margin: auto;
     text-align: center;
-    width: clamp(300px, 50vw, 756px);
+    width: 756px;
 
+}
+
+@media only screen and (max-width: 1100px) {
+    .home_carousel{
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .home_carousel{
+        width: 100%;
+    }
 }
