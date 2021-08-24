@@ -15,6 +15,11 @@ textarea{
         gap: 10px;
         &>input{            
          height: 40px;
+         border: 1px solid rgb(161, 161, 161);
+         border-radius: 10px;
+         &::placeholder{
+            padding: 10px;
+         }
         }
 
     }
@@ -24,6 +29,11 @@ textarea{
             width: 100%;
             box-sizing: border-box;
             height: 170px;
+            border-radius: 10px;
+            border: 1px solid rgb(161, 161, 161);
+            &::placeholder{
+                padding: 10px;
+             }
         }
     }
 
@@ -31,6 +41,18 @@ textarea{
 
 .submit_button{
     margin-top: 20px;
+    &>input{
+        padding: 10px 40px 10px 40px;
+        background-color: #e77320;
+        border: none;
+        border-radius: 5px;
+        color:whitesmoke;
+        &:hover{
+            cursor: pointer;
+            filter: brightness(1.3);
+            transition: all .3s ease;
+        }
+    }
 }
 
 @media only screen and (max-width: 1000px) {

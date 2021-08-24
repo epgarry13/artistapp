@@ -16,6 +16,16 @@
         color: rgb(161, 161, 161);
 
     }
+    &>a{
+        background-color: #234099;
+        padding: 5px;
+        border-radius: 20px;
+        text-decoration: none;
+        color: whitesmoke;
+        &:hover{
+            filter: brightness(1.5);
+        }
+    }
 }
 
 .carousel_container{
