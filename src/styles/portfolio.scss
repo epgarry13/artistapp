@@ -1,0 +1,33 @@
+.displayed_image{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+.attribute_container{
+    width: 300px;
+    display: flex;
+    flex-direction: column;    
+    height: 100px;
+    justify-content: space-between;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.carousel_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.forward{
+    text-align: right;
+}
+
+.back, .forward{
+    &>svg{
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

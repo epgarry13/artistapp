@@ -1,0 +1,25 @@
+.border{
+    border: 1px solid;
+}
+
+.header{
+    text-align: end;
+    margin: 30px auto;
+}
+
+.page_container{
+    width: clamp(300px,60vw, 756px);
+    margin: 60px auto;
+}
+
+@media only screen and (max-width: 1000px) {
+    .header{
+        text-align: center;
+    }
+}
+
+img{
+    object-fit: contain;
+    max-width: 70%;
+    height: auto;
+}

@@ -1,0 +1,18 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    &_container{
+        width: clamp(400px, 30%, 800px);
+        display: flex;
+        justify-content: space-between;
+        &>div{
+            &>a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+
+}
