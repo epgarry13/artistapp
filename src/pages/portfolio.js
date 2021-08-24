@@ -5,7 +5,7 @@ import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 
 import { css } from "@emotion/react";
-import ClipLoader from "react-spinners/ClipLoader";
+import MoonLoader from "react-spinners/MoonLoader";
 
 const queryClient = new QueryClient()
 
@@ -40,7 +40,7 @@ function GetData() {
   );
 
   if (isLoading) return (
-    <div><ClipLoader loading={isLoading} css={override} size={50} /></div>
+    <div><MoonLoader loading={isLoading} css={override} size={50} /></div>
   )
 
   if (error) return (<div><h1>Error, please contact epgarry1@gmail.com.</h1></div>)

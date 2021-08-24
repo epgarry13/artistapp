@@ -9,5 +9,8 @@
 }
 
 .home_carousel{
+    margin: auto;
     text-align: center;
+    width: clamp(300px, 50vw, 756px);
+
 }
