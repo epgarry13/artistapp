@@ -1,3 +1,4 @@
+
 textarea{
     resize: none;
 }
@@ -14,11 +15,12 @@ textarea{
         grid-template-columns: 1fr;
         gap: 10px;
         &>input{            
-         height: 40px;
+         height: 44px;
          border: 1px solid rgb(161, 161, 161);
          border-radius: 10px;
+         padding: 0 0 0 10px;
          &::placeholder{
-            padding: 10px;
+            font-family: 'Montserrat', sans-serif;
          }
         }
 
@@ -31,8 +33,9 @@ textarea{
             height: 170px;
             border-radius: 10px;
             border: 1px solid rgb(161, 161, 161);
+            padding: 10px;
             &::placeholder{
-                padding: 10px;
+                font-family: 'Montserrat', sans-serif;
              }
         }
     }
@@ -43,7 +46,7 @@ textarea{
     margin-top: 20px;
     &>input{
         padding: 10px 40px 10px 40px;
-        background-color: #e77320;
+        background-color: #234099;
         border: none;
         border-radius: 5px;
         color:whitesmoke;
@@ -65,4 +68,8 @@ textarea{
         }
     }
 
+  }
+
+  .bad {
+      border: 2px solid red !important;
   }

@@ -20,7 +20,7 @@ const override = css`
 export default function Portfolio(props) {
   useEffect(() => {
     props.setHighlight(1);
-  }, []);
+  }, [props]);
 
 
   return (

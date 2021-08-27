@@ -58,8 +58,8 @@ function GetData() {
   return (
     <>
       <Carousel
-        NextIcon={<h1></h1>}
-        PrevIcon={<h1></h1>}
+        NextIcon={false}
+        PrevIcon={false}
         navButtonsProps={{
           // Change the colors and radius of the actual buttons. THIS STYLES BOTH BUTTONS
           style: {
