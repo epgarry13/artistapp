@@ -44,12 +44,16 @@ textarea{
 
 .submit_button{
     margin-top: 20px;
+    -webkit-appearance: none;
+    opacity: 1;
     &>input{
         padding: 10px 40px 10px 40px;
         background-color: #234099;
         border: none;
         border-radius: 5px;
         color:whitesmoke;
+        -webkit-appearance: none;
+        opacity: 1;
         &:hover{
             cursor: pointer;
             filter: brightness(1.3);
