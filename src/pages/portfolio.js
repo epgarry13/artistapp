@@ -97,7 +97,7 @@ function GetData(props) {
       <div className="attribute_container">
         <div>{paintings[show]["Description"]}</div>
         <div>
-          {paintings[show]["L"]} x {paintings[show]["W"]}
+          {paintings[show]["H"]} x {paintings[show]["W"]}
         </div>
         <div>{paintings[show]["Price"]}</div>
         <div className="mt-5">{paintings[show]["Comment"]}</div>
