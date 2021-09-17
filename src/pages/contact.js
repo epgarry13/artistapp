@@ -94,7 +94,7 @@ function Contact(props) {
             <ToastContainer limit={1}></ToastContainer>
             <div className="page_container">
             <div className="header">
-                <h1>contact the artist</h1>
+                <h1 className="contact-title">contact the artist</h1>
             </div>
             <form                
                 onSubmit={sendEmail}

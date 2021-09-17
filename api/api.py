@@ -21,9 +21,11 @@ def get_paintings():
     for doc in paintings.find():        
         # print(doc)
         doc['url'] = "https://storage.cloud.google.com/paintings_alan/paintings/" + doc['file_name']
+        if 'Comment' not in doc:
+            doc['Comment'] = ''
         arr.append(doc)
 
-
+    
     send = json.loads(json_util.dumps(arr))
     # print(json.dumps(send, indent=4, sort_keys=True))
     
