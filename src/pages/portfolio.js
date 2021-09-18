@@ -76,7 +76,7 @@ function GetData(props) {
         </div>
         <div className="displayed_image">
           <img
-            src={paintings[show]["url"]}
+            src={process.env.PUBLIC_URL + '/images/' + paintings[show]['url'] }
             alt={paintings[show]["Title"]}
           />
         </div>

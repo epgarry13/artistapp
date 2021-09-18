@@ -20,8 +20,7 @@ def get_paintings():
     arr = []
     for doc in paintings.find():        
         # print(doc)        
-        url = "https://paintings-13.s3.us-east-2.amazonaws.com/" + doc['file_name']
-
+        url = doc['file_name']
         doc['url'] = url
         if 'Comment' not in doc:
             doc['Comment'] = ''
