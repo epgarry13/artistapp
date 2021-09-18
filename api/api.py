@@ -20,7 +20,7 @@ def get_paintings():
     arr = []
     for doc in paintings.find():        
         # print(doc)
-        doc['url'] = "https://storage.cloud.google.com/paintings_alan/" + doc['file_name']
+        doc['url'] = "https://paintings-13.s3.us-east-2.amazonaws.com/" + doc['file_name']
         if 'Comment' not in doc:
             doc['Comment'] = ''
         arr.append(doc)
