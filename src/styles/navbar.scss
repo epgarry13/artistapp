@@ -33,3 +33,18 @@
 .not {
     color: rgb(161, 161, 161);
 }
+
+@media only screen and (max-width: 1000px) {
+    .navbar{
+        &_container{        
+            &>div{
+                &>a{
+                    letter-spacing: 0px !important;
+                    
+                }
+            }
+        }
+    
+
+    }
+}

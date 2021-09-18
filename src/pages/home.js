@@ -77,9 +77,7 @@ function GetData() {
           <div className="home_carousel">
             {" "}
             <img
-              src={
-                process.env.PUBLIC_URL + "/photos/" + paintings[i]["file_name"]
-              }
+              src={paintings[i]["url"]}
               alt={paintings[i]["Title"]}
               key={i}
             />
