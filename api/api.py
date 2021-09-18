@@ -4,13 +4,13 @@ import json
 import os
 from bson import json_util
 
-
 app = Flask(__name__)
 username=os.environ.get('MONGODB_USER')
 password=os.environ.get('MONGODB_PW')
+
+
 connect = 'mongodb+srv://' + username + ':'+ password + "@cluster0.refae.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 databases = MongoClient(connect)
-
 
 # this route tests mongodb connection
 @app.route('/api/paintings', methods=['GET'])
@@ -19,8 +19,10 @@ def get_paintings():
     paintings = databases.Paintings.alan
     arr = []
     for doc in paintings.find():        
-        # print(doc)
-        doc['url'] = "https://paintings-13.s3.us-east-2.amazonaws.com/" + doc['file_name']
+        # print(doc)        
+        url = "https://paintings-13.s3.us-east-2.amazonaws.com/" + doc['file_name']
+
+        doc['url'] = url
         if 'Comment' not in doc:
             doc['Comment'] = ''
         arr.append(doc)
