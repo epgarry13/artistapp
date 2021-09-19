@@ -76,11 +76,12 @@ function GetData() {
         {paintings.map((item, i) => (
           <div className="home_carousel">
             {" "}
-            <img
-              src={process.env.PUBLIC_URL + '/images/' + paintings[i]['url'] }
+            {/* <img
+              // src={'process.env.PUBLIC_URL + '/images/' + paintings[i]['url']'}
+              src="whatever"
               alt={paintings[i]["Title"]}
               key={i}
-            />
+            /> */}
           </div>
         ))}
       </Carousel>
