@@ -75,10 +75,10 @@ function GetData(props) {
           />
         </div>
         <div className="displayed_image">
-          {/* <img
+          <img
             src={process.env.PUBLIC_URL + '/images/' + paintings[show]['url'] }
             alt={paintings[show]["Title"]}
-          /> */}
+          />
         </div>
         <div className="forward">
           <ArrowForwardIosIcon
