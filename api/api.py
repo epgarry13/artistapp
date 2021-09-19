@@ -21,6 +21,7 @@ def get_paintings():
     for doc in paintings.find():        
         # print(doc)        
         url = doc['file_name']
+        print(url)
         doc['url'] = url
         if 'Comment' not in doc:
             doc['Comment'] = ''

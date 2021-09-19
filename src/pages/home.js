@@ -74,14 +74,13 @@ function GetData() {
         animation="fade"
       >
         {paintings.map((item, i) => (
-          <div className="home_carousel">
+          <div key={i} className="home_carousel">
             {" "}
-            {/* <img
-              // src={'process.env.PUBLIC_URL + '/images/' + paintings[i]['url']'}
-              src="whatever"
+            <img
+              src={process.env.PUBLIC_URL + '/images/' + paintings[i]['url']}
               alt={paintings[i]["Title"]}
               key={i}
-            /> */}
+            />
           </div>
         ))}
       </Carousel>

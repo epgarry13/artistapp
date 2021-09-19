@@ -6,7 +6,6 @@ import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 
 import { css } from "@emotion/react";
 import MoonLoader from "react-spinners/MoonLoader";
-import { Link } from "react-router-dom";
 
 const queryClient = new QueryClient();
 
@@ -17,9 +16,7 @@ const override = css`
 `;
 
 export default function Portfolio(props) {
-  useEffect(() => {
-    props.setHighlight(1);
-  }, [props]);
+
 
   return (
     <div className="page_container">
@@ -30,9 +27,9 @@ export default function Portfolio(props) {
   );
 }
 
-function GetData(props) {
+function GetData() {
   const [paintings, setPaintings] = useState([]);
-  const [show, setShow] = useState(0);
+  const [show, setShow] = useState(1);
 
   const { isLoading, error, data } = useQuery("repoData", () =>
     fetch("/api/paintings").then((response) =>
